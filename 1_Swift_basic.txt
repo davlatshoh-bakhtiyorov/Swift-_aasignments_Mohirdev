@@ -1,0 +1,42 @@
+//
+//  main.swift
+//  learnSwift
+//
+//  Created by Davlatshoh Baxtiyorov on 03/12/23.
+//
+
+import Foundation
+
+                                 //1-mavzu: Swift Basic
+//1-topshriq
+var MyAge: Int = 18
+print(MyAge)
+
+var phones = 2
+phones +=  1
+print (phones)
+
+
+//2-topshiriq
+var age: Int = 12
+print (age)
+age = 30
+print(age)
+
+
+//3-topshiriq
+let x: Int = 46
+let y: Int = 10
+let answer1: Int = (x*100)+y
+let answer2: Int = (x*100) + (y*100)
+let answer3: Int = (x*100) / (y/10)
+print(answer1, answer2, answer3)
+
+
+//4-topshiriq
+let raiting1: Double = 12
+let raiting2: Double = 13
+let raiting3: Double = 15
+print("O'rtacha qiymat \((raiting1+raiting2+raiting3)/3)")
+
+
