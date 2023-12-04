@@ -1,0 +1,59 @@
+//
+//  main.swift
+//  learnSwift
+//
+//  Created by Davlatshoh Baxtiyorov on 03/12/23.
+//
+
+import Foundation
+
+                                    //3-mavzu. basic Control Flow
+//1-topshiriq
+let lastname = "Alex"
+var firstname = ""  // firstname ni boshlang'ich qiymat bilan e'lon qilamiz
+
+if lastname == "Alex" {
+    firstname = "Mac"
+} else if lastname == "Davlat" {
+    firstname = "Baxtiyor"
+}
+
+let fullname = lastname + " " + firstname
+print(fullname)
+
+
+//2-topshiriq
+let answer1 = true && true   //true
+let answer2 = false || false  //false
+let answer3 = (true && 1 != 2 || (4>3 && 100<1))  //true
+let answer4 = ((10/2>3) && (10%2==0)) //true
+print(answer1, answer2, answer3, answer4)
+
+
+//3-topshiriq
+func findNextPower(_ number: Int) {
+    let square = number * number
+    let nextPower = square * 2
+    
+    if nextPower == number {
+        print("\(number) soni kvadrati ekanligini anglatadi.")
+    } else {
+        print("\(number) sonining kvadratidan katta bo'lgan sonning darajasi \(nextPower) ga teng.")
+    }
+}
+// Test qilish
+findNextPower(4)   // Natija: 4 soni kvadrati ekanligini anglatadi.
+findNextPower(5)   // Natija: 5 sonining kvadratidan katta bo'lgan sonning darajasi 50 ga teng.
+
+
+//4-topshiriq
+var factorial: Int = 3
+var sonn: Int = factorial - 1
+while sonn > 1 {
+    factorial = factorial * sonn
+    sonn -= 1
+}
+
+print(factorial)
+
+

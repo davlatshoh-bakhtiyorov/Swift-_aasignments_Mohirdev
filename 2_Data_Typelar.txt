@@ -1,0 +1,27 @@
+//
+//  main.swift
+//  learnSwift
+//
+//  Created by Davlatshoh Baxtiyorov on 03/12/23.
+//
+
+import Foundation
+
+
+                            //2-mavzu: Data typelar
+//1-topshiriq
+let string: String = "Dog" //Ushbu javob to'g'ri
+
+//2-topshiriq
+let tuple = (day:15, month:5, year: 2054)
+let day = tuple.Day     //Ushbu kod ishlamaydi
+
+//3-topshiriq
+let name = "Matt"
+name += "Galloway"   //String tipidagi o'zgarmasga += funksiyasi ishlamaydi
+
+//4-topshiriq
+let a = 4
+let b: Int = 100
+let c: Int = 12
+print(a+b-c)
