@@ -1,0 +1,33 @@
+//
+//  main.swift
+//  learnSwift
+//
+//  Created by Davlatshoh Baxtiyorov on 03/12/23.
+//
+
+//4-mavzu: Advanced Control Flow
+
+
+//1-topshiriq
+var sum = 0
+for i in 0...5 {
+    sum += i
+    print(i)     //6 marta takrorlanadi. i ning qiymati 5 bo'ladi.
+}
+
+//2-topshiriq
+
+let coordinates = (1, 2, 0)
+
+switch coordinates {
+case let (x, y, z) where x == y && y == z:
+    print("x = y = z")
+case (_, _, 0):
+    print("Planeta x/y da")   //Shu javob chiqadi chunki (1,2,0) koordinata
+case (_, 0, _):
+    print("Planeta x/z da")
+case (0, _, _):
+    print("Planeta y/z da")
+default:
+    print("Hech qaysi")
+}
