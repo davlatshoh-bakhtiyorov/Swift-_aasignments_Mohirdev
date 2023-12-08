@@ -1,0 +1,33 @@
+//
+//  main.swift
+//  learnSwift
+//
+//  Created by Davlatshoh Baxtiyorov on 03/12/23.
+//
+
+//6-mavzu: Optional
+
+//1-topshiriq
+var name: String? = "Matt" //Ushbu o'zgaruvchi to'g'ri hisoblanadi
+
+
+//2-topshiriq
+func divideIfWhole(_ boluvchi: Int?, _ bolinuvchi: Int?) -> Int? {
+    guard let boluvchi = boluvchi, let bolinuvchi = bolinuvchi, bolinuvchi != 0 else {
+        return nil
+    }
+
+    if boluvchi % bolinuvchi == 0 {
+        let javob: Int = boluvchi / bolinuvchi
+        return javob
+    } else {
+        return nil
+    }
+}
+
+if let result = divideIfWhole(6, 3) {
+    print("Ha u \(result) marta bo'linadi")
+} else {
+    print("Bo'linmaydi :[")
+}
+
